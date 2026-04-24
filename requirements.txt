@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+easyocr
+torch
+torchvision
+torchaudio
+reportlab
+python-multipart
+opencv-python-headless
