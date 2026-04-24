@@ -85,7 +85,7 @@ export default function IndexScreen() {
               try {
                 alert("Downloading PDF...");
                 // Pointing to your new Python download door!
-                const pdfUrl = `http://192.168.29.148:8000/download/${results.pdf_generated}`;
+                const pdfUrl = `https://mahalaxmi-scanner-api.onrender.com/download/${results.pdf_generated}`;
                 //@ts-ignore
                 const fileUri = FileSystem.documentDirectory + results.pdf_generated;
                 
@@ -130,7 +130,7 @@ export default function IndexScreen() {
                   type: 'image/jpeg',
                 } as any);
 
-                const response = await fetch('http://192.168.29.148:8000/upload/', {
+                const response = await fetch('https://mahalaxmi-scanner-api.onrender.com/upload/', {
                   method: 'POST',
                   body: formData,
                 });
